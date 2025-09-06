@@ -44,6 +44,12 @@ Class Usuario{
         $this->password = $password;
     }
 
+
+        //Metodo para que consulte la base de datos
+        public function conseguirTodos(){
+            echo "IMPRIMIENDO TODOS LOS USUARIOS...";
+
+        }
 }
 
 ?>

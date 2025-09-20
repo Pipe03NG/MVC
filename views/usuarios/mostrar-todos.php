@@ -1,7 +1,6 @@
-<h1><?=$todos_los_usuarios?></h1>
+<h1>listado de usuarios </h1>
 
-<!-- como ocurre :
+<?php while ($usuario=$todos_los_usuarios->fetch_object()):?>
 
-1) en el controlador  llamados el model
-2) ejecuto el codigo que necesito ( en este caso conseguir_todos)
-3) por ultimo llamo la vista para mostrar   -->
+    <?= $usuario->nombre ?>
+    <?php endwhile;?>
